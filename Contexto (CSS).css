@@ -1,0 +1,100 @@
+/*CSS only accepts the last change if more than one is placed.*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    color: rgb(0, 0, 0);
+}
+
+.fwh-slide {
+    height: 20vh;
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.fwh-slide--bg-blue {
+    background: rgb(235, 243, 243);
+    color: white;
+}
+
+h1 {
+    background-color: green;
+    background-color: blue;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-right: 300px;
+    padding-left: 300px;
+    font-size: 22px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    text-align: center;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header ul {
+    position: relative;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background: url(bg.jpg);
+    background-size: cover;
+}
+
+header.sticky .logo, 
+header.sticky ul li a {
+    color: #000;
+}
